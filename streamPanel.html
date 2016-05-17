@@ -1,0 +1,219 @@
+<html>
+<head>
+    <meta http-equiv="refresh" content="300">
+    <style>
+        @font-face {
+            font-family: 'font';
+            src: url('fonts/Tuffy.otf');
+        }
+
+        .baseContainer{
+            width: 40px;
+            height: 40px;
+            background: transparent;
+            position: absolute;
+            overflow: hidden;
+            color: white;
+            font-family: 'font';
+            left: 0px;
+        }
+
+        #followContainer{
+            top: 0px;
+            -webkit-animation: animateRender 10s 0s 1;
+        }
+        #twitterContainer{
+            top: 40px;
+            -webkit-animation: animateRender 10s 8s 1;
+        }
+        #discordContainer{
+            top: 80px;
+            -webkit-animation: animateRender 10s 16s 1;
+        }
+        #featuredContainer{
+            top: 120px;
+            -webkit-animation: animateRender 10s 24s 1;
+        }
+
+        .baseHeader{
+            width: 680px;
+            height: 40px;
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            font-size: 38px;
+        }
+
+        #followHeader {
+            background: #2e5794;
+            -webkit-animation: followHeader 10s 0s 1;
+        }
+        #twitterHeader{
+            background: #55acee;
+            -webkit-animation: twitterHeader 10s 8s 1;
+        }
+        #discordHeader{
+            background: #7289DA;
+            -webkit-animation: discordHeader 10s 16s 1;
+        }
+        #featuredHeader{
+            background: #daa520;
+            -webkit-animation: featuredHeader 10s 24s 1;
+        }
+
+        .baseContent{
+            width: 640px;
+            height: 94px;
+            position: relative;
+            overflow: hidden;
+            color: white;
+            left: 40px;
+        }
+        .textContent{
+            padding-top: 3px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        #followContent{
+            background: #2e5794;
+        }
+        #twitterContent{
+            background: #55acee;
+        }
+        #discordContent{
+            background: #7289DA;
+        }
+        #featuredContent{
+            background: #daa520;
+        }
+
+        .contentLogo{
+            width: 90px;
+            height: 90px;
+            float: left;
+        }
+        .headerLogo{
+            width: 38px;
+            height: 38px;
+            float: left;
+        }
+
+        @-webkit-keyframes animateRender {
+            0%, 100% {
+                width: 40px;
+                height: 40px;
+            }
+            20%, 80% {
+                width: 680px;
+                height: 40px;
+            }
+            30%, 70% {
+                width: 680px;
+                height: 134px;
+            }
+        }
+
+        @-webkit-keyframes followHeader {
+            20%,80% {
+                background: #2e5794;
+            }
+            30%,70% {
+                background: #0f3369;
+            }
+        }
+        @-webkit-keyframes twitterHeader {
+            20%,80% {
+                background: #55acee;
+            }
+            30%,70% {
+                background: #0f3369;
+            }
+        }
+        @-webkit-keyframes discordHeader {
+             20%,80% {
+                 background: #7289DA;
+             }
+             30%,70% {
+                 background: #0f3369;
+             }
+         }
+        @-webkit-keyframes featuredHeader {
+            20%,80% {
+                background: #daa520;
+            }
+            30%,70% {
+                background: #0f3369;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="baseContainer" id="followContainer">
+    <div class="baseHeader" id="followHeader">
+        <img class="headerLogo" src="images\twitchLogo.png">
+        <span>Follow Me!</span>
+    </div>
+    <div class="baseContent" id="followContent">
+        <img class="contentLogo" src="images\twitchLogo.png">
+        <div class="textContent">
+            <span>
+                Like the stream?<br>And you haven't followed yet?<br>
+                Hit that follow button then, you silly!
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="baseContainer" id="twitterContainer">
+    <div class="baseHeader" id="twitterHeader">
+        <img class="headerLogo" src="images\twitterLogo.png">
+        <span>Twitter</span>
+    </div>
+    <div class="baseContent" id="twitterContent">
+        <img class="contentLogo" src="images\twitterLogo.png">
+        <div class="textContent">
+            <span>
+                Remember to also follow me on Twitter!<br>
+                Type "!twitter" in chat!
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="baseContainer" id="discordContainer">
+    <div class="baseHeader" id="discordHeader">
+        <img class="headerLogo" src="images\discordLogo.png">
+        <span>Discord</span>
+    </div>
+    <div class="baseContent" id="discordContent">
+        <img class="contentLogo" src="images\discordLogo.png">
+        <div class="textContent">
+            <span>
+                Join us on Discord!<br>
+                Type "!discord" in chat!
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="baseContainer" id="featuredContainer">
+    <div class="baseHeader" id="featuredHeader">
+        <img class="headerLogo" src="images\starLogo.png">
+        <span>Featured Streamers</span>
+    </div>
+    <div class="baseContent" id="featuredContent">
+        <img class="contentLogo" style="padding-top: 1px; padding-left: 2px;" src="images\starLogo.png">
+        <div class="textContent">
+            <span>
+                Wanna find some new peoples to watch?<br>
+                Check the featured streamers out below the player!
+            </span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
